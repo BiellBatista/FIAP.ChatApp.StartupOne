@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vm="clr-namespace:FIAP.ChatApp.StartupOne.Mobile.ViewModels"
+             x:Class="FIAP.ChatApp.StartupOne.Mobile.Views.ContactPage">
+    <ContentPage.BindingContext>
+        <vm:ContactViewModel>
+        </vm:ContactViewModel>
+    </ContentPage.BindingContext>
+    <ContentPage.Content>
+        <StackLayout Padding="40">
+            <Label Text="Investidor" FontSize="Large">
+            </Label>
+            <Label Text="">
+            </Label>
+            <Label Text="Nome:">
+            </Label>
+            <Entry Placeholder="Digite o nome" Text="{Binding Contact.Name}">
+            </Entry>
+            <Label Text="Email:">
+            </Label>
+            <Entry Placeholder="Digite o nome" Text="{Binding Contact.Email}" Keyboard="Email">
+            </Entry>
+            <Button Text="Gravar" Command="{Binding GravarClickedCommand}">
+            </Button>
+            <Label Text="Todos Investidores" HorizontalOptions="CenterAndExpand">
+            </Label>
+            <ListView ItemsSource="{Binding ContactsInMemory}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand" Padding="5">
+                                <Label FontSize="Medium" Text="{Binding Name}" FontAttributes="Bold">
+                                </Label>
+                                <Label FontSize="Medium" Text="{Binding Email}" FontAttributes=" Italic">
+                                </Label>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
