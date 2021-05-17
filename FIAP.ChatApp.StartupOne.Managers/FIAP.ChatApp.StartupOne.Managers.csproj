@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\FIAP.ChatApp.StartupOne.Models\FIAP.ChatApp.StartupOne.Models.csproj" />
+		<ProjectReference Include="..\FIAP.ChatApp.StartupOne.Repositories\FIAP.ChatApp.StartupOne.Repositories.csproj" />
+		<ProjectReference Include="..\FIAP.ChatApp.StartupOne.Tools\FIAP.ChatApp.StartupOne.Tools.csproj" />
+	</ItemGroup>
+</Project>

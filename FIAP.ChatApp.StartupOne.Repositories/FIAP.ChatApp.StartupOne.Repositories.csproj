@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>net5.0</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\FIAP.ChatApp.StartupOne.DL\FIAP.ChatApp.StartupOne.DL.csproj" />
+		<ProjectReference Include="..\FIAP.ChatApp.StartupOne.Models\FIAP.ChatApp.StartupOne.Models.csproj" />
+	</ItemGroup>
+</Project>

@@ -1,0 +1,69 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31229.75
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FIAP.ChatApp.StartupOne.API", "FIAP.ChatApp.StartupOne.API\FIAP.ChatApp.StartupOne.API.csproj", "{7096B61B-B556-4F8F-930C-6A7931468BE9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FIAP.ChatApp.StartupOne.DL", "FIAP.ChatApp.StartupOne.DL\FIAP.ChatApp.StartupOne.DL.csproj", "{6B88F7B6-A597-4AE4-8803-D5A2DEC04EBD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIAP.ChatApp.StartupOne.Models", "FIAP.ChatApp.StartupOne.Models\FIAP.ChatApp.StartupOne.Models.csproj", "{D6D600A4-F84D-41A2-9CFE-57A90DD55103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIAP.ChatApp.StartupOne.Managers", "FIAP.ChatApp.StartupOne.Managers\FIAP.ChatApp.StartupOne.Managers.csproj", "{D3B08559-1D2B-4437-A112-716AC11EEB3C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIAP.ChatApp.StartupOne.Repositories", "FIAP.ChatApp.StartupOne.Repositories\FIAP.ChatApp.StartupOne.Repositories.csproj", "{D5F44759-4098-4074-BF83-61E43F363434}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIAP.ChatApp.StartupOne.Tools", "FIAP.ChatApp.StartupOne.Tools\FIAP.ChatApp.StartupOne.Tools.csproj", "{6A260487-DAC8-4860-8C7C-640BA0083B9E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIAP.ChatApp.StartupOne.Mobile.Android", "FIAP.ChatApp.StartupOne.Mobile\FIAP.ChatApp.StartupOne.Mobile.Android\FIAP.ChatApp.StartupOne.Mobile.Android.csproj", "{E775A7FB-570D-445B-810C-3A64D191B9D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FIAP.ChatApp.StartupOne.Mobile", "FIAP.ChatApp.StartupOne.Mobile\FIAP.ChatApp.StartupOne.Mobile\FIAP.ChatApp.StartupOne.Mobile.csproj", "{2B8B881E-EFD5-4178-8450-192D5ED85E8D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7096B61B-B556-4F8F-930C-6A7931468BE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7096B61B-B556-4F8F-930C-6A7931468BE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7096B61B-B556-4F8F-930C-6A7931468BE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7096B61B-B556-4F8F-930C-6A7931468BE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6B88F7B6-A597-4AE4-8803-D5A2DEC04EBD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6B88F7B6-A597-4AE4-8803-D5A2DEC04EBD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6B88F7B6-A597-4AE4-8803-D5A2DEC04EBD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6B88F7B6-A597-4AE4-8803-D5A2DEC04EBD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D6D600A4-F84D-41A2-9CFE-57A90DD55103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D6D600A4-F84D-41A2-9CFE-57A90DD55103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D6D600A4-F84D-41A2-9CFE-57A90DD55103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D6D600A4-F84D-41A2-9CFE-57A90DD55103}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3B08559-1D2B-4437-A112-716AC11EEB3C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3B08559-1D2B-4437-A112-716AC11EEB3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3B08559-1D2B-4437-A112-716AC11EEB3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3B08559-1D2B-4437-A112-716AC11EEB3C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D5F44759-4098-4074-BF83-61E43F363434}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D5F44759-4098-4074-BF83-61E43F363434}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D5F44759-4098-4074-BF83-61E43F363434}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D5F44759-4098-4074-BF83-61E43F363434}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A260487-DAC8-4860-8C7C-640BA0083B9E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A260487-DAC8-4860-8C7C-640BA0083B9E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A260487-DAC8-4860-8C7C-640BA0083B9E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A260487-DAC8-4860-8C7C-640BA0083B9E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E775A7FB-570D-445B-810C-3A64D191B9D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E775A7FB-570D-445B-810C-3A64D191B9D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E775A7FB-570D-445B-810C-3A64D191B9D0}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{E775A7FB-570D-445B-810C-3A64D191B9D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E775A7FB-570D-445B-810C-3A64D191B9D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E775A7FB-570D-445B-810C-3A64D191B9D0}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{2B8B881E-EFD5-4178-8450-192D5ED85E8D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B8B881E-EFD5-4178-8450-192D5ED85E8D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B8B881E-EFD5-4178-8450-192D5ED85E8D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B8B881E-EFD5-4178-8450-192D5ED85E8D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9A8857D4-C880-494D-A37B-A5347EA0B092}
+	EndGlobalSection
+EndGlobal
