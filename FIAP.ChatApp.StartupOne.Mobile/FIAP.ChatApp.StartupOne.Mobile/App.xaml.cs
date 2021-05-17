@@ -1,28 +1,45 @@
-﻿using System;
+﻿using FIAP.ChatApp.StartupOne.Mobile.Services.Core;
+using FIAP.ChatApp.StartupOne.Mobile.Services.Interfaces;
+using FIAP.ChatApp.StartupOne.Mobile.ViewModels;
+using FIAP.ChatApp.StartupOne.Mobile.Views;
+using Prism;
+using Prism.Ioc;
+using Xamarin.Essentials.Implementation;
+using Xamarin.Essentials.Interfaces;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 namespace FIAP.ChatApp.StartupOne.Mobile
 {
-    public partial class App : Application
+    public partial class App
     {
-        public App()
+        public App(IPlatformInitializer initializer)
+            : base(initializer)
+        {
+        }
+
+        protected override async void OnInitialized()
         {
             InitializeComponent();
 
-            MainPage = new MainPage();
+            await NavigationService.NavigateAsync("NavigationPage/MainPage");
         }
 
-        protected override void OnStart()
+        protected override void RegisterTypes(IContainerRegistry containerRegistry)
         {
-        }
+            containerRegistry.RegisterSingleton<IAppInfo, AppInfoImplementation>();
 
-        protected override void OnSleep()
-        {
-        }
+            containerRegistry.RegisterForNavigation<NavigationPage>();
+            containerRegistry.RegisterForNavigation<MainPage, MainPageViewModel>();
 
-        protected override void OnResume()
-        {
+            containerRegistry.RegisterForNavigation<ChatRoomPage, ChatRoomPageViewModel>();
+            containerRegistry.RegisterForNavigation<FriendsPage, FriendsPageViewModel>();
+
+            containerRegistry.Register<IChatService, ChatService>();
+            containerRegistry.Register<IAuthenticationService, AuthenticationService>();
+            containerRegistry.Register<ISessionService, SessionService>();
+            containerRegistry.Register<IUsersService, UsersService>();
+
+            containerRegistry.RegisterForNavigation<PrivateChatPage, PrivateChatPageViewModel>();
         }
     }
 }
